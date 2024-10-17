@@ -1,0 +1,245 @@
+.postes {
+  padding-top: 10rem;
+}
+.most-mypost {
+  position: relative;
+  font-size: 2.5rem;
+  color: #246bef;
+  margin-left: 14rem;
+  margin-top: 4rem;
+}
+.most-mypost::after {
+  position: absolute;
+  content: "";
+  background-color: #246bef;
+  width: 13.4rem;
+  height: 0.3rem;
+  bottom: -8%;
+  left: 0%;
+}
+
+.mypost {
+  margin: auto;
+  padding: 0.3rem;
+  display: flex;
+  background-color: #f1f1f1;
+  width: 80%;
+  height: 30rem;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  border: solid 0.2rem #246bef;
+  border-radius: 1.5rem;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+.mypost-content {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+}
+
+.mypost-logo-container {
+  max-width: 12rem;
+  max-height: 12rem;
+}
+.mypost-logo {
+  max-width: 14rem;
+  max-height: 14rem;
+  margin-top: -1.8rem;
+  margin-right: -3.5rem;
+}
+.mypost-logo:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.mypost-date {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #000;
+}
+
+.mypost-details1 {
+  max-width: 65%;
+}
+
+.myloser-details {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  text-align: left;
+  position: relative;
+}
+.myloser-details ::after {
+  content: "";
+  position: absolute;
+  bottom: -2.5rem;
+  left: 0rem;
+  height: 0.05rem;
+  width: 100%;
+  background-color: #246bef;
+}
+.mypost-description {
+  margin-left: 2rem;
+  color: #000;
+}
+/* poster name */
+.mypost-name {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #000;
+}
+
+/* post details styling */
+.mypost-details {
+  font-size: 1.8rem;
+  margin: 2rem 0rem;
+  text-align: left;
+  color: #000;
+}
+
+.child-name_div {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #246bef;
+}
+.child-name {
+  color: #000;
+}
+.mypost-description {
+  margin-left: 2rem;
+}
+
+.mypost_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+/* location */
+.mypost-location {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 3rem;
+}
+.mypost-location-tag {
+  color: #246bef;
+  margin-left: 0.3rem;
+  font-weight: 1000;
+}
+
+.mypost-Email {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-right: 8rem;
+}
+.mypost-email-tag {
+  color: #246bef;
+  font-weight: 1000;
+  margin-left: 0.3rem;
+}
+.mypost-Status {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.mypost-status-tag {
+  color: #246bef;
+  margin-left: 0.3rem;
+  font-weight: 1000;
+}
+/* Age Range */
+.mypost-ageRange {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.mypost-ageRange-tag {
+  color: #246bef;
+  margin-left: 0.3rem;
+  font-weight: 1000;
+}
+/* Loss Date */
+.mypost-lossDate {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.mypost-lossDate-tag {
+  color: #246bef;
+  margin-left: 0.3rem;
+  font-weight: 1000;
+}
+/* location */
+
+.mypost-Phone {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 3rem;
+}
+.mypost-phone-tag {
+  color: #246bef;
+  font-weight: 1000;
+  margin-left: 0.3rem;
+}
+/* loster photo styling */
+.mypost-photo-container {
+  display: flex;
+  background-color: #fff;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  justify-content: center;
+  align-self: center;
+}
+.mypost-photo {
+  max-height: 20rem;
+  scale: 1.8;
+}
+
+.dropbtn {
+  background-color: #246bef;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+}
+.dropdown {
+  position: absolute;
+  display: flex;
+  height: 4rem;
+  width: 5rem;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 0;
+}
+.dropdown-content {
+  color: #000;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  top: 50%;
+  right: 50%;
+  z-index: 5;
+}
+.dropdown-content:hover {
+  cursor: pointer;
+  color: #246bef;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 1.2rem 1.6rem;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content {
+  display: block;
+}
+.hidden {
+  display: none;
+}

@@ -1,0 +1,843 @@
+html {
+  scroll-behavior: smooth;
+}
+/* Section style */
+.postes-section {
+  padding: 10rem;
+  padding-top: 15rem;
+}
+/* most recent style */
+.most-recent {
+  position: relative;
+  font-size: 2.5rem;
+  color: #246bef;
+}
+.most-recent::after {
+  position: absolute;
+  content: "";
+  background-color: #246bef;
+  width: 18.4rem;
+  height: 0.3rem;
+  bottom: -8%;
+  left: 0%;
+}
+/* post style */
+.post {
+  display: flex;
+  background-color: #f1f1f1;
+  width: 90% !important;
+  margin: 2rem auto;
+  border: solid 0.2rem #246bef;
+  border-radius: 1.5rem;
+  justify-content: space-between;
+  overflow: hidden;
+}
+/* post content */
+.poster-content {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  justify-content: space-between;
+}
+.poster_handel {
+  display: flex;
+  width: 100%;
+}
+
+/* poster logo */
+.poster-logo-container {
+  max-width: 12rem;
+  max-height: 12rem;
+}
+.poster-logo {
+  max-width: 14rem;
+  max-height: 14rem;
+  margin-top: -1.8rem;
+  margin-right: -3.5rem;
+}
+.poster-logo:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+/* poster name */
+.poster-name {
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+/* Poster Date */
+.poster-date {
+  font-size: 1rem;
+  font-weight: 500;
+}
+/* poster detiails */
+.poster-details {
+  width: 65%;
+}
+.poster-details > p,
+.post_info > p {
+  color: #000;
+}
+/* post details styling */
+.loster-details {
+  font-size: 1.5rem;
+  margin: 3rem 0rem;
+  text-align: left;
+  position: relative;
+}
+.loster-details::after {
+  content: "";
+  position: absolute;
+  bottom: -2.5rem;
+  left: 0rem;
+  height: 0.05rem;
+  width: 100%;
+  background-color: #246bef;
+}
+.child-name_div {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #246bef;
+}
+.child-name {
+  color: #000;
+}
+.poster-description {
+  margin-left: 2rem;
+}
+/* Handel post info */
+.post_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+/* Child Status */
+.loster-Status {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.status-tag {
+  color: #246bef;
+  margin-left: 0.3rem;
+  font-weight: 600;
+}
+/* Age Range */
+.loster-ageRange {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.ageRange-tag {
+  color: #246bef;
+  margin-left: 0.3rem;
+  font-weight: 600;
+}
+/* Loss Date */
+.loster-lossDate {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.lossDate-tag {
+  color: #246bef;
+  margin-left: 0.3rem;
+  font-weight: 600;
+}
+/* location */
+.loster-location {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.location-tag {
+  color: #246bef;
+  margin-left: 0.3rem;
+  font-weight: 600;
+}
+.loster-Email {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.email-tag {
+  color: #246bef;
+  font-weight: 600;
+  margin-left: 0.3rem;
+}
+.loster-Phone {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.phone-tag {
+  color: #246bef;
+  font-weight: 600;
+  margin-left: 0.3rem;
+}
+/* loster photo styling */
+.loster-photo-container {
+  display: flex;
+  background-color: transparent;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  justify-content: center;
+  align-self: center;
+  width: 20rem;
+  height: 20rem;
+  box-shadow: 0 0 1rem 0.1rem #246bef;
+}
+.image-wrapper {
+  width: 100%;
+  position: relative;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+.image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/**/
+.filter {
+  display: flex;
+  position: relative;
+  padding: 1rem;
+  justify-content: center !important;
+}
+.filter-age,
+.filter-government,
+.filter-city,
+.filter-lossdate,
+.filter-status {
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+  align-items: center;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  margin: 1.2rem;
+  color: #000;
+  background-color: #fff;
+  border-radius: 1.1rem;
+  border-color: rgb(173, 152, 124);
+}
+/**/
+.poster_create_btn {
+  display: flex;
+  justify-content: right;
+}
+/* loading */
+.loading {
+  position: absolute;
+  right: 48%;
+  color: #246bef;
+  font-size: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+/* Modal styles */
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 101;
+  cursor: pointer;
+}
+
+.enlarged-image {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  box-shadow: 0 0 1rem 0.1rem #246bef;
+}
+@media (max-width: 1410px) {
+  .filter-age,
+  .filter-government,
+  .filter-city,
+  .filter-lossdate,
+  .filter-status {
+    padding: 0.5rem 0.6rem !important;
+    margin: 0.8rem;
+  }
+  .most-recent {
+    font-size: 2.2rem;
+  }
+  .most-recent::after {
+    width: 16.5rem;
+  }
+}
+@media (max-width: 1300px) {
+  .filter-age,
+  .filter-government,
+  .filter-city,
+  .filter-lossdate,
+  .filter-status {
+    padding: 0.5rem 0.5rem !important;
+    font-size: 1.25rem !important;
+  }
+  .filtter-button {
+    padding: 1rem 2.5rem !important;
+  }
+  .most-recent {
+    font-size: 1.8rem;
+  }
+  .most-recent::after {
+    width: 13.3rem;
+  }
+}
+@media (max-width: 1210px) {
+  .filter-age,
+  .filter-government,
+  .filter-city,
+  .filter-lossdate,
+  .filter-status {
+    padding: 0.5rem 0.5rem;
+    font-size: 1.1rem !important;
+  }
+  .filter {
+    padding: 0.2rem !important;
+    margin-top: 1.5rem !important;
+  }
+  .filtter-button {
+    padding: 0.8rem 2rem !important;
+  }
+  .most-recent {
+    font-size: 1.6rem;
+  }
+  .most-recent::after {
+    width: 12rem;
+  }
+  .posts-create-btn {
+    position: absolute;
+    font-size: 1rem !important;
+    padding: 1.3rem 2.8rem !important;
+    margin-right: 0 !important;
+    line-height: 0 !important;
+    top: 0.5rem !important;
+  }
+  .most-mypost {
+    margin-left: 11rem !important;
+  }
+}
+@media (max-width: 1090px) {
+  .filter-age,
+  .filter-government,
+  .filter-city,
+  .filter-lossdate,
+  .filter-status {
+    padding: 0.3rem 0.3rem;
+    font-size: 0.8rem !important;
+  }
+  .filter {
+    padding: 0.2rem;
+    margin-left: 1rem;
+    margin-top: 0.8rem;
+  }
+  .filtter-button {
+    padding: 0.5rem 1.1rem !important;
+  }
+  .loster-location,
+  .location-tag,
+  .loster-Email,
+  .email-tag,
+  .loster-Phone,
+  .phone-tag,
+  .loster-Status,
+  .status-tag,
+  .loster-ageRange,
+  .ageRange-tag,
+  .loster-lossDate,
+  .lossDate-tag {
+    font-size: 0.8rem !important;
+    margin: 0 !important;
+    margin-top: 0.7rem !important;
+  }
+  .location-tag,
+  .email-tag,
+  .phone-tag,
+  .status-tag,
+  .ageRange-tag,
+  .lossDate-tag {
+    margin-left: 0.2rem !important;
+  }
+}
+@media (max-width: 890px) {
+  .filter-age,
+  .filter-government,
+  .filter-city,
+  .filter-lossdate,
+  .filter-status {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem !important;
+    margin-left: 0.3rem !important;
+    margin-right: 0.1rem !important;
+  }
+  .filter {
+    padding: 0rem;
+    margin-left: 0.2rem;
+    margin-top: 0.5rem;
+  }
+  .filtter-button {
+    padding: 0.5rem 1rem !important;
+    font-size: 1rem;
+  }
+  .loster-location,
+  .location-tag,
+  .loster-Email,
+  .email-tag,
+  .loster-Phone,
+  .phone-tag,
+  .loster-Status,
+  .status-tag,
+  .loster-ageRange,
+  .ageRange-tag,
+  .loster-lossDate,
+  .lossDate-tag {
+    font-size: 0.8rem !important;
+    line-height: 1 !important;
+    margin-top: 0.5rem !important;
+  }
+  .loster-photo-container {
+    width: 15rem;
+    height: 15rem;
+    box-shadow: 0 0 1rem 0.1rem #246bef;
+  }
+  .poster-logo-container {
+    max-width: 10rem;
+    max-height: 10rem;
+  }
+  .poster-logo {
+    max-width: 12rem;
+    max-height: 12rem;
+    margin-top: -1.6rem;
+    margin-right: -3rem;
+  }
+}
+@media (max-width: 850px) {
+  .filter-age,
+  .filter-government,
+  .filter-city,
+  .filter-lossdate,
+  .filter-status {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem !important;
+    margin-left: 0.3rem !important;
+    margin-right: 0.1rem !important;
+  }
+  .filter {
+    padding: 0rem;
+    margin-left: 0.2rem;
+    margin-top: 0.5rem;
+  }
+  .filtter-button {
+    width: 100% !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 1rem;
+  }
+  .loster-location,
+  .location-tag,
+  .loster-Email,
+  .email-tag,
+  .loster-Phone,
+  .phone-tag,
+  .loster-Status,
+  .status-tag,
+  .loster-ageRange,
+  .ageRange-tag,
+  .loster-lossDate,
+  .lossDate-tag {
+    font-size: 0.8rem !important;
+    line-height: 1 !important;
+    margin-top: 0.5rem !important;
+  }
+  .loster-photo-container {
+    width: 15rem;
+    height: 15rem;
+    box-shadow: 0 0 1rem 0.1rem #246bef;
+  }
+  .filter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .poster-logo-container {
+    max-width: 8rem;
+    max-height: 8rem;
+    margin-left: -2rem !important;
+  }
+  .poster-logo {
+    max-width: 10rem;
+    max-height: 10rem;
+    margin-top: -1.4rem;
+    margin-right: -2.5rem;
+  }
+  .loster-details {
+    font-size: 1.2rem !important;
+    margin: 3rem 0rem !important;
+  }
+  .child-name_div {
+    font-size: 1.2rem !important;
+  }
+  .poster-name {
+    margin-top: 2rem !important;
+    font-size: 0.8rem !important;
+  }
+  .poster-date {
+    font-size: 0.8rem !important;
+  }
+  .most-mypost {
+    margin-left: 9rem !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .filter-age,
+  .filter-government,
+  .filter-city,
+  .filter-lossdate,
+  .filter-status {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem !important;
+    margin-left: 0.3rem !important;
+    margin-right: 0.1rem !important;
+  }
+  .filter {
+    padding: 0rem;
+    margin-left: 0.2rem;
+    margin-top: 0.5rem;
+  }
+  .filtter-button {
+    width: 100% !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 1rem;
+  }
+  .loster-location,
+  .location-tag,
+  .loster-Email,
+  .email-tag,
+  .loster-Phone,
+  .phone-tag,
+  .loster-Status,
+  .status-tag,
+  .loster-ageRange,
+  .ageRange-tag,
+  .loster-lossDate,
+  .lossDate-tag {
+    font-size: 0.75rem !important;
+    line-height: 0.5 !important;
+    margin-top: 0.5rem !important;
+  }
+  .loster-photo-container {
+    width: 15rem;
+    height: 15rem;
+    box-shadow: 0 0 1rem 0.1rem #246bef;
+  }
+  .filter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .poster-logo-container {
+    max-width: 7rem;
+    max-height: 7rem;
+    margin-left: -2rem !important;
+  }
+  .poster-logo {
+    max-width: 9rem;
+    max-height: 9rem;
+    margin-top: -1.2rem;
+    margin-right: -2.2rem;
+  }
+  .post_info {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .loster-details {
+    font-size: 1rem !important;
+    margin: 3rem 0rem !important;
+  }
+  .child-name_div {
+    font-size: 1rem !important;
+  }
+  .poster-name {
+    margin-top: 1.5rem !important;
+    font-size: 0.8rem !important;
+  }
+  .poster-date {
+    font-size: 0.8rem !important;
+  }
+  .postes-section {
+    padding: 6rem !important;
+  }
+  .most-recent {
+    font-size: 1.6rem;
+    margin-top: 1.5rem !important;
+  }
+  .most-recent::after {
+    width: 12rem;
+  }
+  .posts-create-btn {
+    position: absolute;
+    font-size: 1rem !important;
+    padding: 1.3rem 2.8rem !important;
+    margin-right: 0 !important;
+    line-height: 0 !important;
+    top: 0.5rem !important;
+  }
+  .poster-details {
+    width: 85% !important;
+  }
+}
+@media (max-width: 590px) {
+  .filter-age,
+  .filter-government,
+  .filter-city,
+  .filter-lossdate,
+  .filter-status {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem !important;
+    margin-left: 0.3rem !important;
+    margin-right: 0.1rem !important;
+  }
+  .filter {
+    padding: 0rem;
+    margin-left: 0.2rem;
+    margin-top: 0.5rem;
+  }
+  .filtter-button {
+    width: 100% !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 1rem;
+  }
+  .loster-location,
+  .location-tag,
+  .loster-Email,
+  .email-tag,
+  .loster-Phone,
+  .phone-tag,
+  .loster-Status,
+  .status-tag,
+  .loster-ageRange,
+  .ageRange-tag,
+  .loster-lossDate,
+  .lossDate-tag {
+    font-size: 0.7rem !important;
+    line-height: 0.5 !important;
+    margin-top: 0.5rem !important;
+  }
+  .loster-photo-container {
+    width: 15rem;
+    height: 15rem;
+    box-shadow: 0 0 1rem 0.1rem #246bef;
+    margin-right: 2rem;
+  }
+  .filter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .poster-logo-container {
+    max-width: 5rem;
+    max-height: 5rem;
+    margin-left: -2rem;
+  }
+  .poster-logo {
+    max-width: 7rem;
+    max-height: 7rem;
+    margin-top: -1.5rem;
+  }
+  .post_info {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .loster-details {
+    font-size: 0.8rem !important;
+    margin: 2.5rem 0rem !important;
+  }
+  .child-name_div {
+    font-size: 1rem !important;
+  }
+  .poster-name {
+    margin-top: 1rem !important;
+    font-size: 0.8rem !important;
+    margin-left: 0.2rem;
+  }
+  .poster-date {
+    font-size: 0.8rem !important;
+  }
+  .poster-details {
+    width: 80%;
+  }
+  .postes-section {
+    padding: 7.5rem !important;
+  }
+  .most-recent {
+    font-size: 1.4rem;
+    margin-top: 1.5rem !important;
+  }
+  .most-recent::after {
+    width: 10.4rem;
+  }
+  .posts-create-btn {
+    font-size: 0.8rem !important;
+    padding: 1.2rem 2.5rem !important;
+  }
+  .loster-details::after {
+    width: 50% !important;
+  }
+  .most-mypost {
+    margin-left: 7rem !important;
+  }
+}
+@media (max-width: 490px) {
+  .filter-age,
+  .filter-government,
+  .filter-city,
+  .filter-lossdate,
+  .filter-status {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem !important;
+    margin-left: 0.3rem !important;
+    margin-right: 0.1rem !important;
+  }
+  .filter {
+    padding: 0rem;
+    margin-left: 0.2rem;
+    margin-top: 0.5rem;
+  }
+  .filtter-button {
+    width: 100% !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 1rem;
+  }
+  .loster-location,
+  .location-tag,
+  .loster-Email,
+  .email-tag,
+  .loster-Phone,
+  .phone-tag,
+  .loster-Status,
+  .status-tag,
+  .loster-ageRange,
+  .ageRange-tag,
+  .loster-lossDate,
+  .lossDate-tag {
+    font-size: 0.6rem !important;
+    line-height: 0.4 !important;
+    margin-top: 0.5rem !important;
+  }
+  .loster-photo-container {
+    width: 12rem;
+    height: 12rem;
+    box-shadow: 0 0 1rem 0.1rem #246bef;
+  }
+  .filter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .poster-logo-container {
+    max-width: 4rem;
+    max-height: 4rem;
+    padding-right: 0.6rem !important;
+  }
+  .poster-logo {
+    max-width: 5rem;
+    max-height: 5rem;
+    margin-top: -1.5rem;
+    margin-left: -0.2rem;
+  }
+  .post_info {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0.1rem;
+  }
+  .loster-details {
+    font-size: 0.8rem !important;
+    margin: 2.5rem 0rem !important;
+  }
+  .child-name_div {
+    font-size: 1rem !important;
+  }
+  .poster-name {
+    margin-top: 0.5rem !important;
+    font-size: 0.8rem !important;
+    margin-left: 0.2rem;
+  }
+  .poster-date {
+    font-size: 0.8rem !important;
+  }
+  .poster-details {
+    width: 80%;
+  }
+  .postes-section {
+    padding: 6.5rem !important;
+  }
+  .most-recent {
+    font-size: 1rem;
+    margin-top: 1.5rem !important;
+  }
+  .most-recent::after {
+    width: 7.4rem;
+  }
+  .posts-create-btn {
+    font-size: 0.8rem !important;
+    padding: 1.2rem 2rem !important;
+  }
+  .most-mypost {
+    margin-left: 5rem !important;
+  }
+}
+@media (max-width: 450px) {
+  .filter {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .filter-age,
+  .filter-government,
+  .filter-city,
+  .filter-lossdate,
+  .filter-status {
+    padding: 0.4rem 0.8rem !important;
+    font-size: 0.8rem !important;
+    margin-left: 0.5rem !important;
+    margin-right: 0.05rem !important;
+  }
+  .filtter-button {
+    line-height: 0 !important;
+    padding: 1rem 2rem !important;
+    font-size: 0.8rem !important;
+  }
+  .most-recent {
+    font-size: 1rem;
+    margin-top: 1.5rem !important;
+    margin-left: -2rem !important;
+  }
+  .posts-create-btn {
+    margin-right: -2rem !important;
+  }
+  .most-mypost {
+    margin-left: 4rem !important;
+  }
+}

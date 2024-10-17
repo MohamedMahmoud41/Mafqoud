@@ -1,0 +1,406 @@
+/* Form Styling */
+
+.post-modal-content {
+  width: 90rem;
+  height: 80% !important;
+  background-color: #383636 !important;
+  border-radius: 1.2rem !important;
+  box-shadow: 0rem 0rem 2rem 0.01rem #246bef;
+  padding: 2rem 2.4rem;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+}
+.post-modal {
+  width: 100vw;
+  height: 100vh;
+  top: 5rem !important;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 1000 !important;
+}
+.CreatPost {
+  width: 100%;
+  background-color: transparent;
+  padding-top: 0.5rem;
+  margin: 0 auto;
+}
+.CreatPostTitle {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.CreatPostTitle::after {
+  position: absolute;
+  content: "";
+  background-color: #246bef;
+  width: 15.1rem;
+  height: 0.3rem;
+  bottom: -8%;
+  left: -0.5%;
+  border-radius: 1rem;
+}
+.FormContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.data_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.data_container-grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+/* Input & Label Styling */
+.InputForm {
+  width: 80%;
+  border: #246bfe 0.1rem solid;
+  border-radius: 0.4rem;
+  margin: 0.5rem 0;
+  height: 3rem;
+  padding: 0 1rem;
+}
+.LabelForm {
+  width: 19%;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.InputForm-grid {
+  width: 120%;
+  border: #246bfe 0.1rem solid;
+  border-radius: 0.4rem;
+  margin: 0.5rem 0;
+  height: 3rem;
+  padding: 0 1rem;
+  justify-self: right;
+  margin-right: 0.5rem;
+}
+.LabelForm-grid {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-top: 0.8rem;
+}
+.data_container-grid > label {
+  color: #ffffff;
+}
+.fix-label {
+  margin-left: 2rem;
+}
+input::placeholder {
+  display: flex;
+  font-size: 1.5rem;
+}
+/* Caption handeling */
+.zero {
+  margin-top: 1.5rem;
+  align-self: flex-start;
+}
+.CaptionHeight {
+  height: 15rem !important;
+  resize: none;
+  overflow: scroll;
+  padding: 1rem 1rem !important;
+}
+/* Input Photo Styling */
+.InputPhotoForm {
+  width: 80%;
+}
+.PhotoForm {
+  border-radius: 1.2rem;
+  border: 0.1rem #246bfe solid;
+  padding: 0.5rem 0.25rem;
+  background-color: #fff;
+}
+#photo {
+  border: 0.1rem solid #ccc;
+  font-size: 1.6rem;
+  visibility: hidden;
+}
+#photo:hover::before {
+  box-shadow: 0 0 0.1rem 0.1rem #246bfe;
+  background-color: #246bfe;
+  color: #ffffff;
+}
+#photo::-webkit-file-upload-button {
+  visibility: hidden;
+}
+#photo::before {
+  content: "Upload Photo";
+  display: inline-block;
+  background: #ffffff;
+  color: #246bfe;
+  border: none;
+  padding: 0.8rem 3rem;
+  cursor: pointer;
+  border-radius: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  visibility: visible;
+  transition: all 0.3s;
+}
+/* Buttons Styling */
+.FormButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ButtonForm {
+  margin-top: 3rem;
+  padding: 1rem 5rem;
+  border-radius: 3rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 580;
+  background-color: #246bfe;
+  color: #ffffff;
+}
+.ButtonForm:hover {
+  box-shadow: 0 0 0.1rem 0.1rem #246bfe;
+  background-color: #ffffff;
+  color: #246bfe;
+  cursor: pointer;
+}
+/**/
+.ToggleContainer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.toggel-span {
+  margin-right: 1rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+@media (max-width: 1500px) {
+  .CreatPost {
+    padding-top: 0.3rem;
+  }
+  .CreatPostTitle {
+    margin-bottom: 1.2rem;
+  }
+  .ButtonForm {
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 1016px) {
+  .ReactModal__Content {
+    width: 85rem;
+  }
+  .ToggleContainer {
+    margin-right: 0.7rem;
+  }
+  .CreatPostTitle {
+    margin-bottom: 1rem;
+  }
+  .CaptionHeight {
+    height: 14rem !important;
+  }
+}
+@media (max-width: 968px) {
+  .ReactModal__Content {
+    width: 80em;
+  }
+  .CaptionHeight {
+    height: 13rem !important;
+  }
+}
+@media (max-width: 924px) {
+  .ReactModal__Content {
+    width: 78em;
+    height: 75%;
+  }
+  .CaptionHeight {
+    height: 12.8rem !important;
+  }
+}
+@media (max-width: 892px) {
+  .ReactModal__Content {
+    width: 75em;
+    height: 73%;
+  }
+  .CaptionHeight {
+    height: 12.4rem !important;
+  }
+}
+@media (max-width: 872px) {
+  .ReactModal__Content {
+    width: 73em;
+  }
+  .CaptionHeight {
+    height: 11.8rem !important;
+  }
+}
+@media (max-width: 852px) {
+  .ReactModal__Content {
+    width: 73em;
+  }
+  .CaptionHeight {
+    height: 11.8rem !important;
+  }
+}
+@media (max-width: 832px) {
+  .ReactModal__Content {
+    width: 72em;
+  }
+  .CaptionHeight {
+    height: 11.5rem !important;
+  }
+}
+@media (max-width: 804px) {
+  .ReactModal__Content {
+    width: 70em;
+  }
+  .CaptionHeight {
+    height: 11rem !important;
+  }
+}
+@media (max-width: 760px) {
+  .ReactModal__Content {
+    width: 65em;
+  }
+  .CaptionHeight {
+    height: 9.44rem !important;
+  }
+}
+@media (max-width: 696px) {
+  .ReactModal__Content {
+    width: 60em;
+  }
+  .CaptionHeight {
+    height: 9.2rem !important;
+  }
+  .LabelForm {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 650px) {
+  .ReactModal__Content {
+    width: 55em;
+  }
+  .CaptionHeight {
+    height: 9rem !important;
+  }
+}
+@media (max-width: 620px) {
+  .ReactModal__Content {
+    width: 53em;
+  }
+  .CaptionHeight {
+    height: 8.5rem !important;
+  }
+}
+@media (max-width: 592px) {
+  .ReactModal__Content {
+    width: 50em;
+  }
+  .CaptionHeight {
+    height: 8.5rem !important;
+  }
+  .LabelForm {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 550px) {
+  .ReactModal__Content {
+    width: 45em;
+  }
+  .CaptionHeight {
+    height: 8rem !important;
+  }
+  .LabelForm {
+    font-size: 1rem;
+    width: 17%;
+    margin-right: 0.5rem;
+  }
+}
+@media (max-width: 496px) {
+  .ReactModal__Content {
+    width: 40em;
+  }
+  .LabelForm {
+    font-size: 1rem;
+    width: 16%;
+    margin-right: 0.9rem;
+  }
+  .InputForm {
+    width: 77%;
+  }
+  .CaptionHeight {
+    height: 6.9rem !important;
+  }
+}
+@media (max-width: 454px) {
+  .ReactModal__Content {
+    width: 35em;
+  }
+  .LabelForm {
+    font-size: 0.9rem;
+    width: 16%;
+    margin-right: 1rem;
+  }
+  .InputForm {
+    width: 77%;
+  }
+  .CaptionHeight {
+    height: 6.8rem !important;
+  }
+}
+@media (max-width: 430px) {
+  .ReactModal__Content {
+    width: 32em;
+  }
+  .LabelForm {
+    font-size: 0.8rem;
+    width: 16%;
+    margin-right: 1rem;
+  }
+  .InputForm {
+    width: 75%;
+  }
+  .CaptionHeight {
+    height: 6rem !important;
+  }
+}
+@media (max-width: 368px) {
+  .ReactModal__Content {
+    width: 30em;
+  }
+  .LabelForm {
+    font-size: 0.8rem;
+    width: 16%;
+    margin-right: 2rem;
+  }
+  .InputForm {
+    width: 85%;
+  }
+  .CaptionHeight {
+    height: 6.5rem !important;
+  }
+}
+@media (max-width: 350px) {
+  .ReactModal__Content {
+    width: 28em;
+  }
+  .LabelForm {
+    font-size: 0.73rem;
+    width: 16%;
+    margin-right: 2rem;
+  }
+  .InputForm {
+    width: 80%;
+  }
+  .CaptionHeight {
+    height: 7rem !important;
+  }
+}

@@ -1,0 +1,112 @@
+.form-body {
+  padding: 10rem;
+  padding-top: 15rem;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-feedback {
+  display: flex;
+  flex-direction: column;
+  width: 28rem;
+  align-items: center;
+  margin: 0 auto;
+}
+.head-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  text-align: center;
+  color: #246bef;
+  margin-bottom: 3rem;
+}
+
+.form-border,
+.form-textarea {
+  width: 50rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.form-border::placeholder,
+.form-textarea::placeholder {
+  color: #555;
+  font-weight: 500;
+}
+.form-textarea {
+  height: 20rem;
+  resize: none;
+}
+.form-border,
+.form-textarea {
+  border: 0.2rem solid #246bef;
+  border-radius: 0.7rem;
+  margin-bottom: 2rem;
+}
+
+.send-button {
+  font-size: 1.8rem;
+  padding: 1rem 9rem;
+  background-color: #246bef;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.send-button:hover {
+  background: #ffffff;
+  color: #246bfe;
+  box-shadow: 0rem 0rem 0.5rem 0.001rem #246bef;
+}
+@media (max-width: 560px) {
+  .head-text {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+  .form-border,
+  .form-textarea {
+    margin-bottom: 0.7rem;
+    width: 40rem;
+  }
+  .send-button {
+    font-size: 1.6rem;
+    padding: 0.7rem 6.3rem;
+  }
+}
+@media (max-width: 430px) {
+  .head-text {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .form-border,
+  .form-textarea {
+    margin-bottom: 0.5rem;
+    width: 30rem;
+  }
+  .send-button {
+    font-size: 1.3rem;
+    padding: 0.5rem 4.5rem;
+  }
+}
+@media (max-width: 330px) {
+  .head-text {
+    font-size: 1.8rem;
+    margin-bottom: 1.3rem;
+  }
+  .form-border,
+  .form-textarea {
+    margin-bottom: 0.3rem;
+    width: 24rem;
+  }
+  .send-button {
+    font-size: 1rem;
+    padding: 0.3rem 2.7rem;
+  }
+}

@@ -1,0 +1,247 @@
+html {
+  scroll-behavior: smooth;
+}
+/* Section style */
+.postes-section {
+  padding: 10rem;
+  padding-top: 15rem;
+}
+/* most recent style */
+.most-recent {
+  position: relative;
+  font-size: 2.5rem;
+  color: #246bef;
+}
+.most-recent::after {
+  position: absolute;
+  content: "";
+  background-color: #246bef;
+  width: 18.4rem;
+  height: 0.3rem;
+  bottom: -8%;
+  left: 0%;
+}
+/* post style */
+.post {
+  display: flex;
+  background-color: #f1f1f1;
+  width: 100%;
+  margin: 5rem 0;
+  border: solid 0.2rem #246bef;
+  border-radius: 1.5rem;
+  justify-content: space-between;
+  overflow: hidden;
+}
+/* post content */
+.poster-content {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  justify-content: space-between;
+}
+.poster_handel {
+  display: flex;
+  width: 100%;
+}
+
+/* poster logo */
+.poster-logo-container {
+  max-width: 12rem;
+  max-height: 12rem;
+}
+.poster-logo {
+  max-width: 14rem;
+  max-height: 14rem;
+  margin-top: -1.8rem;
+  margin-right: -3.5rem;
+}
+.poster-logo:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+/* Poster Date */
+.poster-date {
+  font-size: 1rem;
+  font-weight: 500;
+}
+/* poster detiails */
+.poster-details {
+  width: 65%;
+}
+.poster-details > p,
+.post_info > p {
+  color: #000;
+}
+/* poster name */
+.poster-name {
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+/* post details styling */
+.loster-details {
+  font-size: 1.5rem;
+  margin: 3rem 0rem;
+  text-align: left;
+  position: relative;
+}
+.loster-details::after {
+  content: "";
+  position: absolute;
+  bottom: -2.5rem;
+  left: 0rem;
+  height: 0.05rem;
+  width: 100%;
+  background-color: #246bef;
+}
+.child-name_div {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #246bef;
+}
+.child-name {
+  color: #000;
+}
+.poster-description {
+  margin-left: 2rem;
+}
+/* Handel post info */
+.post_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+/* Child Status */
+.loster-Status {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.status-tag {
+  color: #246bef;
+  margin-left: 0.3rem;
+  font-weight: 500;
+}
+/* Age Range */
+.loster-ageRange {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.ageRange-tag {
+  color: #246bef;
+  margin-left: 0.3rem;
+  font-weight: 500;
+}
+/* Loss Date */
+.loster-lossDate {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.lossDate-tag {
+  color: #246bef;
+  margin-left: 0.3rem;
+  font-weight: 500;
+}
+/* location */
+.loster-location {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.location-tag {
+  color: #246bef;
+  margin-left: 0.3rem;
+  font-weight: 500;
+}
+.loster-Email {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.email-tag {
+  color: #246bef;
+  font-weight: 500;
+  margin-left: 0.3rem;
+}
+.loster-Phone {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.phone-tag {
+  color: #246bef;
+  font-weight: 500;
+  margin-left: 0.3rem;
+}
+/* loster photo styling */
+.loster-photo-container {
+  display: flex;
+  background-color: #fff;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  justify-content: center;
+  align-self: center;
+}
+.loster-photo {
+  max-height: 20rem;
+  scale: 1.8;
+}
+/**/
+.page-numbers-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.page-number {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.page-number:hover,
+.page-number.active {
+  background-color: #333;
+  color: #fff;
+}
+.current_page_number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #246bef;
+  margin: 0 1.2rem;
+}
+.filter {
+  position: relative;
+  padding: 1rem;
+  margin-left: 3rem;
+}
+.filter-age,
+.filter-government,
+.filter-city,
+.filter-lossdate,
+.filter-status {
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+  justify-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 1.2rem;
+  color: #000;
+  background-color: #fff;
+  border-radius: 1.1rem;
+  border-color: rgb(173, 152, 124);
+}
+
+/**/
+.poster_create_btn {
+  display: flex;
+  justify-content: right;
+}
+/* loading */
+.loading {
+  position: absolute;
+  right: 48%;
+  color: #246bef;
+  font-size: 3rem;
+  transition: all 0.3s ease-in-out;
+}

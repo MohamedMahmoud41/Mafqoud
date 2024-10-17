@@ -1,0 +1,253 @@
+.services h2 {
+  width: 178px;
+  margin: 47px auto;
+  display: block;
+  background: #d7e5ff;
+  box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+  border-radius: 36px;
+  padding: 13px 34.5px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+  color: #246bfe;
+  text-transform: capitalize;
+  text-align: center;
+}
+.servicesbtn-1 {
+  height: 60px;
+  margin: 47px auto 100px auto;
+  display: block;
+  background: #246bfe;
+  box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+  border-radius: 36px;
+  padding: 13px 34.5px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  text-align: center;
+  transition: all 0.3s;
+}
+.servicesbtn-1:hover {
+  background: #ffffff;
+  color: #246bfe;
+  box-shadow: 0rem 0rem 1rem 0.01rem #246bfe;
+}
+.services h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: left;
+  text-transform: capitalize;
+  color: inherit;
+  margin-bottom: 0.5rem;
+}
+.services p {
+  padding-left: 1.2rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 36px;
+  text-transform: capitalize;
+
+  color: inherit;
+}
+.bg-color {
+  background-color: #246bfe;
+  filter: blur(150px);
+  content: "";
+  width: 437px;
+  height: 448px;
+}
+.rightSideImage {
+  position: relative;
+}
+.rightSideImage img {
+  width: 355px;
+  height: 448px;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.leftSideImage {
+  position: relative;
+}
+.leftSideImage img {
+  width: 355px;
+  height: 380px;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.gap-105 {
+  gap: 105px;
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+  /* CSS styles specific to extra small devices */
+  .flex-direction {
+    flex-direction: column;
+  }
+  .text-1 {
+    order: 1;
+  }
+  .bg-color {
+    background-color: #246bfe;
+    filter: blur(150px);
+    content: "";
+    width: 250px;
+    height: 350px;
+  }
+
+  .rightSideImage img {
+    width: 220px;
+    height: 380px;
+    position: absolute;
+    left: 24px;
+    top: -22px;
+  }
+
+  .leftSideImage img {
+    width: 220px;
+    height: 380px;
+    position: absolute;
+    left: 24px;
+    top: -22px;
+  }
+  .services h3 {
+    font-size: 18px;
+  }
+  .services p {
+    font-size: 14px;
+  }
+  .servicesbtn-1 {
+    width: 170px;
+    height: 45px;
+    font-size: 16px;
+  }
+}
+/* Small devices (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  /* CSS styles specific to small devices */
+  .flex-direction {
+    flex-direction: column;
+  }
+  .text-1 {
+    order: 1;
+  }
+  .bg-color {
+    background-color: #246bfe;
+    filter: blur(150px);
+    content: "";
+    width: 350px;
+    height: 300px;
+  }
+  .rightSideImage img {
+    width: 220px;
+    height: 380px;
+    position: absolute;
+    left: 54px;
+    top: -64px;
+  }
+  .leftSideImage img {
+    width: 220px;
+    height: 380px;
+    position: absolute;
+    left: 54px;
+    top: -64px;
+  }
+  .services h3 {
+    font-size: 24px;
+  }
+  .services p {
+    font-size: 18px;
+  }
+  .servicesbtn-1 {
+    width: 170px;
+    height: auto;
+    font-size: 16px;
+  }
+}
+/* Medium devices (laptops) */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* CSS styles specific to medium devices */
+  .bg-color {
+    background-color: #246bfe;
+    filter: blur(150px);
+    content: "";
+    width: 200px;
+    height: 270px;
+  }
+  .rightSideImage img {
+    width: 420px;
+    height: 380px;
+    position: absolute;
+    left: -140px;
+    top: -54px;
+  }
+  .leftSideImage img {
+    width: 220px;
+    height: 380px;
+    position: absolute;
+    left: -10px;
+    top: -54px;
+  }
+  .services h3 {
+    font-size: 24px;
+  }
+  .services p {
+    font-size: 18px;
+  }
+  .servicesbtn-1 {
+    width: 170px;
+    height: auto;
+    font-size: 16px;
+  }
+}
+/* Large devices (desktops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* CSS styles specific to large devices */
+  .bg-color {
+    background-color: #246bfe;
+    filter: blur(150px);
+    content: "";
+    width: 200px;
+    height: 270px;
+  }
+  .rightSideImage img {
+    width: 420px;
+    height: 380px;
+    position: absolute;
+    left: -140px;
+    top: -54px;
+  }
+  .leftSideImage img {
+    width: 220px;
+    height: 380px;
+    position: absolute;
+    left: -10px;
+    top: -54px;
+  }
+  .services h3 {
+    font-size: 24px;
+  }
+  .services p {
+    font-size: 18px;
+  }
+  .servicesbtn-1 {
+    width: 170px;
+    height: auto;
+    font-size: 16px;
+  }
+}

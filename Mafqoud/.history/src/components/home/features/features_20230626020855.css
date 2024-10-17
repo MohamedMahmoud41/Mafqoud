@@ -1,0 +1,219 @@
+.features h2 {
+  width: 17.8rem;
+  margin: 4.7rem auto;
+  display: block;
+  background: #d7e5ff;
+  box-shadow: 0rem 0.1rem 0.2rem rgba(105, 81, 255, 0.05);
+  border-radius: 3.6rem;
+  padding: 1.3rem 3.45rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.8rem;
+  color: #246bfe;
+  text-transform: capitalize;
+  text-align: center;
+}
+.card {
+  width: 39.3rem;
+  height: 53.5rem;
+  background: #d7e5ff;
+  border-radius: 4rem;
+  padding: 7.4rem 2.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card img {
+  width: 21.5rem;
+  height: 19.5rem;
+  object-fit: contain;
+
+  text-align: center;
+}
+.mb34 {
+  margin-bottom: 3.4rem;
+}
+.mb-70 {
+  margin-bottom: 7rem;
+}
+
+.card p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 7400;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  text-transform: capitalize;
+
+  color: #000000;
+}
+.features h2 {
+  width: 17.8rem;
+  margin: 4.7rem auto;
+  display: block;
+  background: #d7e5ff;
+  box-shadow: 0rem 0.1rem 0.2rem rgba(105, 81, 255, 0.05);
+  border-radius: 3.6rem;
+  padding: 1.3rem 3.45rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.8rem;
+  color: #246bfe;
+  text-transform: capitalize;
+  text-align: center;
+}
+.card {
+  width: 39.3rem;
+  height: 53.5rem;
+  background: #d7e5ff;
+  border-radius: 4rem;
+  padding: 7.4rem 2.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card img {
+  width: 21.5rem;
+  height: 19.5rem;
+  object-fit: contain;
+
+  text-align: center;
+}
+.mb34 {
+  margin-bottom: 3.4rem;
+}
+.mb-70 {
+  margin-bottom: 7rem;
+}
+
+.card p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 7400;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  text-transform: capitalize;
+
+  color: #000000;
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+  /* CSS styles specific to extra small devices */
+  .container-1 {
+    margin: auto !important;
+    width: auto;
+  }
+  .display-block {
+    display: block;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+  .card img {
+    width: 20rem;
+    height: 19.5rem;
+  }
+  .card p {
+    font-size: 1.8rem;
+  }
+}
+/* Small devices (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  /* CSS styles specific to small devices */
+  .container-1 {
+    margin: auto !important;
+    width: auto;
+  }
+  .card {
+    width: auto;
+    height: 55rem;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+  .card img {
+    width: 24rem;
+    height: 19.5rem;
+  }
+  .card p {
+    font-size: 1.8rem;
+  }
+  .display-block {
+    display: block;
+  }
+}
+/* Medium devices (laptops) */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* CSS styles specific to medium devices */
+  .container-1 {
+    margin: auto !important;
+    width: auto;
+  }
+  .display-block {
+    display: block;
+  }
+  .card {
+    width: auto;
+    height: 35rem;
+    gap: 1.5rem;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+  .card img {
+    width: 28rem;
+    height: 19.5rem;
+  }
+  .card p {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* CSS styles specific to large devices */
+  .container-1 {
+    margin: auto !important;
+    width: auto;
+  }
+  .display-block {
+    display: block;
+  }
+  .card {
+    width: auto;
+    height: 35rem;
+    gap: 1.5rem;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+  .card img {
+    width: 35rem;
+    height: 25rem;
+    object-fit: contain;
+  }
+  .card p {
+    font-size: 2.8rem;
+  }
+}
+/* Extra large devices (large desktops) */
+@media (min-width: 1201px) {
+  /* CSS styles specific to extra large devices */
+  .card {
+    width: auto;
+    height: auto;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+}

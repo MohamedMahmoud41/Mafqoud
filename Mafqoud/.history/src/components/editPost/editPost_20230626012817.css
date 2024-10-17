@@ -1,0 +1,127 @@
+.EditPost {
+  padding: 10rem;
+  padding-top: 15rem;
+  margin: 0 auto;
+}
+.CreatPostTitle {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.CreatPostTitle::after {
+  position: absolute;
+  content: "";
+  background-color: #246bef;
+  width: 15.1rem;
+  height: 0.3rem;
+  bottom: -8%;
+  left: -0.5%;
+  border-radius: 1rem;
+}
+.FormContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Input & Label Styling */
+.InputForm {
+  width: 80%;
+  border: #246bfe 0.1rem solid;
+  border-radius: 0.4rem;
+  margin: 0.5rem 0;
+  height: 3rem;
+  padding: 0 1rem;
+}
+.LabelForm {
+  width: 19%;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+input::placeholder {
+  display: flex;
+  font-size: 1.5rem;
+}
+/* Caption handeling */
+.zero {
+  margin-top: 1.5rem;
+  align-self: flex-start;
+}
+.CaptionHeight {
+  height: 15rem !important;
+  resize: none;
+  overflow: scroll;
+  padding: 1rem 1rem !important;
+}
+/* Input Photo Styling */
+.InputPhotoForm {
+  width: 80%;
+}
+.PhotoForm {
+  border-radius: 1.2rem;
+  border: 0.1rem #246bfe solid;
+  padding: 0.5rem 0.25rem;
+  background-color: #fff;
+}
+#photo {
+  border: 1px solid #ccc;
+  font-size: 16px;
+  visibility: hidden;
+}
+#photo:hover::before {
+  box-shadow: 0 0 0.1rem 0.1rem #246bfe;
+  background-color: #246bfe;
+  color: #ffffff;
+}
+#photo::-webkit-file-upload-button {
+  visibility: hidden;
+}
+#photo::before {
+  content: "Upload Photo";
+  display: inline-block;
+  background: #ffffff;
+  color: #246bfe;
+  border: none;
+  padding: 0.8rem 3rem;
+  cursor: pointer;
+  border-radius: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  visibility: visible;
+  transition: all 0.3s;
+}
+/* Buttons Styling */
+.FormButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ButtonForm {
+  margin-top: 3rem;
+  padding: 1rem 5rem;
+  border-radius: 3rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 580;
+  background-color: #246bfe;
+  color: #ffffff;
+}
+.ButtonForm:hover {
+  box-shadow: 0 0 0.1rem 0.1rem #246bfe;
+  background-color: #ffffff;
+  color: #246bfe;
+  cursor: pointer;
+}
+/**/
+.ToggleContainer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.toggel-span {
+  margin-right: 1rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}

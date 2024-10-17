@@ -1,0 +1,379 @@
+footer {
+  background-color: #0141c0;
+  border-radius: 3rem 3rem 0 0;
+  padding-top: 5rem;
+  padding-bottom: 0.2rem;
+}
+footer img {
+  width: 20.5rem;
+  object-fit: contain;
+}
+.gap-80 {
+  gap: 8rem;
+}
+.gap-20 {
+  gap: 2rem;
+}
+.footer-leftside {
+  margin-bottom: 3.6rem;
+}
+.topfooter {
+  border-bottom: 0.1rem solid #9e9d9d;
+}
+.downfooter {
+  margin: 2.4rem 0;
+}
+.footer-leftside h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.footer-leftside ul li {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: left;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 2.4rem;
+}
+.upbutton {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: #d9d9d9;
+  padding: 1.2rem 0;
+  text-align: center;
+  right: 0;
+}
+.upbutton i {
+  font-size: 2.4rem;
+  color: #000;
+}
+.copyright p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.icons {
+  width: 2rem;
+  height: 2rem;
+  color: #ffffff;
+  transition: all 0.2s;
+}
+.icons:hover {
+  cursor: pointer;
+  color: #000;
+  scale: 1.2;
+}
+footer {
+  background-color: #0141c0;
+  border-radius: 3rem 3rem 0 0;
+  padding-top: 5rem;
+  padding-bottom: 0.2rem;
+}
+footer img {
+  width: 20.5rem;
+  object-fit: contain;
+}
+.gap-80 {
+  gap: 8rem;
+}
+.gap-20 {
+  gap: 2rem;
+}
+.footer-leftside {
+  margin-bottom: 3.6rem;
+}
+.topfooter {
+  border-bottom: 0.1rem solid #9e9d9d;
+}
+.downfooter {
+  margin: 2.4rem 0;
+}
+.footer-leftside h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.footer-leftside ul li {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: left;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 2.4rem;
+}
+.upbutton {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: #d9d9d9;
+  padding: 1.2rem 0;
+  text-align: center;
+  right: 0;
+}
+.upbutton i {
+  font-size: 2.4rem;
+  color: #000;
+}
+.copyright p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.icons {
+  width: 2rem;
+  height: 2rem;
+  color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    height: 40vh;
+  }
+  footer img {
+    width: 17rem;
+    object-fit: contain;
+  }
+  .gap-80 {
+    gap: 4.5rem;
+  }
+  .gap-10 {
+    gap: 2rem;
+  }
+  .leftside {
+    margin-bottom: 3.6rem;
+  }
+  .topfooter {
+    border-bottom: 0.1rem solid #9e9d9d;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .downfooter {
+    margin: 2.4rem 0;
+  }
+  .footer-leftside h3 {
+    font-size: 1.8rem;
+  }
+  .footer-leftside ul li {
+    font-size: 1.4rem;
+  }
+  /* .upbutton {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #d9d9d9;
+    padding: 12px 0;
+    text-align: center;
+    right: 0;
+  } 
+  .upbutton i {
+    font-size: 24px;
+    color: #000;
+  } */
+  .copyright p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* CSS styles specific to extra small devices */
+  footer {
+    height: 55vh;
+  }
+  footer img {
+    width: 17rem;
+    object-fit: contain;
+  }
+  .gap-80 {
+    gap: 2rem;
+  }
+  .gap-10 {
+    gap: 2rem;
+  }
+  .leftside {
+    margin-bottom: 3.6rem;
+  }
+  .topfooter {
+    border-bottom: 0.1rem solid #9e9d9d;
+  }
+
+  .footer-leftside h3 {
+    font-size: 1.5rem;
+  }
+  .footer-leftside ul li {
+    font-size: 1.2rem;
+    margin-bottom: 1.2 !important;
+  }
+  /* .upbutton {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #d9d9d9;
+    padding: 12px 0;
+    text-align: center;
+    right: 0;
+  } 
+  .upbutton i {
+    font-size: 24px;
+    color: #000;
+  } */
+  .copyright {
+    order: 1 !important;
+  }
+  .copyright p {
+    font-size: 12px;
+  }
+  .downfooter {
+    margin: 24px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .social {
+    order: 0 !important;
+    margin-bottom: 1.2rem;
+  }
+}
+/* Small devices (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  /* CSS styles specific to small devices */
+  footer {
+    height: 62vh;
+  }
+  footer img {
+    width: 170px;
+    object-fit: contain;
+  }
+  .gap-80 {
+    gap: 45px;
+  }
+  .gap-10 {
+    gap: 20px;
+  }
+  .leftside {
+    margin-bottom: 36px;
+  }
+  .topfooter {
+    border-bottom: 1px solid #9e9d9d;
+  }
+  .downfooter {
+    margin: 24px 0;
+  }
+  .footer-leftside h3 {
+    font-size: 18px;
+  }
+  .footer-leftside ul li {
+    font-size: 14px;
+  }
+  /* .upbutton {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #d9d9d9;
+    padding: 12px 0;
+    text-align: center;
+    right: 0;
+  } 
+  .upbutton i {
+    font-size: 24px;
+    color: #000;
+  } */
+  .copyright p {
+    font-size: 18px;
+  }
+}
+/* Medium devices (laptops) */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* CSS styles specific to medium devices */
+
+  footer {
+    height: 50vh;
+  }
+  footer img {
+    width: 170px;
+    object-fit: contain;
+  }
+  .gap-80 {
+    gap: 20px;
+  }
+  .gap-10 {
+    gap: 20px;
+  }
+  .leftside {
+    margin-bottom: 36px;
+  }
+  .topfooter {
+    border-bottom: 1px solid #9e9d9d;
+  }
+
+  .footer-leftside h3 {
+    font-size: 15px;
+  }
+  .footer-leftside ul li {
+    font-size: 12px;
+    margin-bottom: 12px !important;
+  }
+  /* .upbutton {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #d9d9d9;
+      padding: 12px 0;
+      text-align: center;
+      right: 0;
+    } 
+    .upbutton i {
+      font-size: 24px;
+      color: #000;
+    } */
+  .copyright {
+    order: 1 !important;
+  }
+  .copyright p {
+    font-size: 12px;
+  }
+  .downfooter {
+    margin: 24px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .social {
+    order: 0 !important;
+    margin-bottom: 1.2rem;
+  }
+}

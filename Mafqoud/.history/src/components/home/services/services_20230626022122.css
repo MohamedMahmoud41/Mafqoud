@@ -1,0 +1,253 @@
+.services h2 {
+  width: 17.8rem;
+  margin: 4.7rem auto;
+  display: block;
+  background: #d7e5ff;
+  box-shadow: 0rem 0.1rem 0.2rem rgba(105, 81, 255, 0.05);
+  border-radius: 3.6rem;
+  padding: 1.3rem 3.45rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.8rem;
+  color: #246bfe;
+  text-transform: capitalize;
+  text-align: center;
+}
+.servicesbtn-1 {
+  height: 6rem;
+  margin: 4.7rem auto 10rem auto;
+  display: block;
+  background: #246bfe;
+  box-shadow: 0rem 0.1rem 0.2rem rgba(105, 81, 255, 0.05);
+  border-radius: 3.6rem;
+  padding: 1.3rem 3.45rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.8rem;
+  color: #ffffff;
+  text-transform: capitalize;
+  text-align: center;
+  transition: all 0.3s;
+}
+.servicesbtn-1:hover {
+  background: #ffffff;
+  color: #246bfe;
+  box-shadow: 0rem 0rem 1rem 0.01rem #246bfe;
+}
+.services h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  text-align: left;
+  text-transform: capitalize;
+  color: inherit;
+  margin-bottom: 0.5rem;
+}
+.services p {
+  padding-left: 1.2rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.6rem;
+  text-transform: capitalize;
+
+  color: inherit;
+}
+.bg-color {
+  background-color: #246bfe;
+  filter: blur(15rem);
+  content: "";
+  width: 43.7rem;
+  height: 44.8rem;
+}
+.rightSideImage {
+  position: relative;
+}
+.rightSideImage img {
+  width: 35.5rem;
+  height: 44.8rem;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.leftSideImage {
+  position: relative;
+}
+.leftSideImage img {
+  width: 35.5rem;
+  height: 38rem;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.gap-105 {
+  gap: 10.5rem;
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+  /* CSS styles specific to extra small devices */
+  .flex-direction {
+    flex-direction: column;
+  }
+  .text-1 {
+    order: 1;
+  }
+  .bg-color {
+    background-color: #246bfe;
+    filter: blur(15rem);
+    content: "";
+    width: 25rem;
+    height: 35rem;
+  }
+
+  .rightSideImage img {
+    width: 22rem;
+    height: 38rem;
+    position: absolute;
+    left: 2.4rem;
+    top: -2.2rem;
+  }
+
+  .leftSideImage img {
+    width: 22rem;
+    height: 38rem;
+    position: absolute;
+    left: 2.4rem;
+    top: -2.2rem;
+  }
+  .services h3 {
+    font-size: 1.8rem;
+  }
+  .services p {
+    font-size: 1.4rem;
+  }
+  .servicesbtn-1 {
+    width: 17rem;
+    height: 4.5rem;
+    font-size: 1.6rem;
+  }
+}
+/* Small devices (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  /* CSS styles specific to small devices */
+  .flex-direction {
+    flex-direction: column;
+  }
+  .text-1 {
+    order: 1;
+  }
+  .bg-color {
+    background-color: #246bfe;
+    filter: blur(15rem);
+    content: "";
+    width: 35rem;
+    height: 30rem;
+  }
+  .rightSideImage img {
+    width: 22rem;
+    height: 38rem;
+    position: absolute;
+    left: 5.4rem;
+    top: -6.4rem;
+  }
+  .leftSideImage img {
+    width: 22rem;
+    height: 38rem;
+    position: absolute;
+    left: 5.4rem;
+    top: -6.4rem;
+  }
+  .services h3 {
+    font-size: 2.4rem;
+  }
+  .services p {
+    font-size: 1.8rem;
+  }
+  .servicesbtn-1 {
+    width: 17rem;
+    height: auto;
+    font-size: 1.6rem;
+  }
+}
+/* Medium devices (laptops) */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* CSS styles specific to medium devices */
+  .bg-color {
+    background-color: #246bfe;
+    filter: blur(15rem);
+    content: "";
+    width: 20rem;
+    height: 27rem;
+  }
+  .rightSideImage img {
+    width: 42rem;
+    height: 38rem;
+    position: absolute;
+    left: -14rem;
+    top: -5.4rem;
+  }
+  .leftSideImage img {
+    width: 22rem;
+    height: 38rem;
+    position: absolute;
+    left: -1rem;
+    top: -5.4rem;
+  }
+  .services h3 {
+    font-size: 2.4rem;
+  }
+  .services p {
+    font-size: 1.8rem;
+  }
+  .servicesbtn-1 {
+    width: 17rem;
+    height: auto;
+    font-size: 1.6rem;
+  }
+}
+/* Large devices (desktops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* CSS styles specific to large devices */
+  .bg-color {
+    background-color: #246bfe;
+    filter: blur(15rem);
+    content: "";
+    width: 20rem;
+    height: 27rem;
+  }
+  .rightSideImage img {
+    width: 42rem;
+    height: 38rem;
+    position: absolute;
+    left: -14rem;
+    top: -5.4rem;
+  }
+  .leftSideImage img {
+    width: 22rem;
+    height: 38rem;
+    position: absolute;
+    left: -1rem;
+    top: -5.4rem;
+  }
+  .services h3 {
+    font-size: 2.4rem;
+  }
+  .services p {
+    font-size: 1.8rem;
+  }
+  .servicesbtn-1 {
+    width: 17rem;
+    height: auto;
+    font-size: 1.6rem;
+  }
+}

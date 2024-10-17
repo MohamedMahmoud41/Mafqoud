@@ -1,0 +1,76 @@
+.user-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  max-width: 100%;
+  background-color: rgb(11, 2, 51);
+  border-radius: 30px;
+}
+.user-container img {
+  width: auto;
+  height: 12rem;
+  object-fit: contain;
+}
+.user-img {
+  transition: all 0.5s;
+}
+
+.user-img:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+.user-container .user-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 2.7rem;
+  font-family: "Poppins";
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2.5rem 4rem 2.5rem;
+}
+.card-body h3 {
+  text-align: left;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #000000;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  border-bottom: 1px solid #c4c4c4;
+}
+.card-body .form-outline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card-body .form-outline .lable-box {
+  width: 90px;
+  text-align: left;
+}
+.card-body .form-outline label {
+  color: #0c0c0c;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.card-body .form-outline .form-control {
+  margin: 0;
+}
+.card-body .btn-edit {
+  border-radius: 80px;
+  padding: 12px 30px;
+  background-color: #246bef;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: capitalize;
+  width: 151px !important;
+  margin: 0 auto;
+  margin-top: 3rem;
+}

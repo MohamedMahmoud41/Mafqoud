@@ -1,0 +1,507 @@
+/* Form Styling */
+
+.post-modal-content {
+  width: 90rem;
+  height: auto !important;
+  background-color: #383636 !important;
+  border-radius: 1.2rem !important;
+  box-shadow: 0rem 0rem 2rem 0.01rem #246bef;
+  padding: 2rem 2.4rem;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+}
+.post-modal {
+  width: 100vw;
+  height: 100vh;
+  top: 5rem !important;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 1000 !important;
+}
+.CreatPost {
+  width: 100%;
+  background-color: transparent;
+  padding-top: 0.5rem;
+  margin: 0 auto;
+}
+.CreatPostTitle {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.CreatPostTitle::after {
+  position: absolute;
+  content: "";
+  background-color: #246bef;
+  width: 15.1rem;
+  height: 0.3rem;
+  bottom: -8%;
+  left: -0.5%;
+  border-radius: 1rem;
+}
+.FormContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.data_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.data_container-grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+/* Input & Label Styling */
+.InputForm {
+  width: 80%;
+  border: #fff 0.1rem solid;
+  border-radius: 0.4rem;
+  margin: 0.5rem 0;
+  height: 3rem;
+  padding: 0 1rem;
+}
+.LabelForm {
+  width: 19%;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.InputForm-grid {
+  width: 120%;
+  border: #246bfe 0.1rem solid;
+  border-radius: 0.4rem;
+  margin: 0.5rem 0;
+  height: 3rem;
+  padding: 0 1rem;
+  justify-self: right;
+  margin-right: 0.5rem;
+}
+.LabelForm-grid {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-top: 0.8rem;
+}
+.fix-label {
+  margin-left: 2rem;
+}
+input::placeholder {
+  display: flex;
+  font-size: 1.5rem;
+}
+/* Caption handeling */
+.zero {
+  margin-top: 1.5rem;
+  align-self: flex-start;
+}
+.CaptionHeight-create {
+  height: 15rem !important;
+  resize: none;
+  overflow: scroll;
+  padding: 1rem 1rem !important;
+}
+/* Input Photo Styling */
+.InputPhotoForm {
+  width: 80%;
+}
+.PhotoForm {
+  border-radius: 1.2rem;
+  border: 0.1rem #246bfe solid;
+  padding: 0.5rem 0rem !important;
+  background-color: #fff;
+}
+#photo {
+  border: 0.1rem solid #ccc;
+  font-size: 1.6rem;
+  visibility: hidden;
+}
+#photo:hover::before {
+  box-shadow: 0 0 0.1rem 0.1rem #246bfe;
+  background-color: #246bfe;
+  color: #ffffff;
+}
+#photo::-webkit-file-upload-button {
+  visibility: hidden;
+}
+#photo::before {
+  content: "Upload Photo";
+  display: inline-block;
+  background: #ffffff;
+  color: #246bfe;
+  border: none;
+  padding: 0.8rem 3.2rem;
+  cursor: pointer;
+  border-radius: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  visibility: visible;
+  transition: all 0.3s;
+}
+/* Buttons Styling */
+.FormButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ButtonForm {
+  margin-top: 3rem;
+  padding: 1rem 5rem;
+  border-radius: 3rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 580;
+  background-color: #246bfe;
+  color: #ffffff;
+}
+.ButtonForm:hover {
+  box-shadow: 0 0 0.1rem 0.1rem #246bfe;
+  background-color: #ffffff;
+  color: #246bfe;
+  cursor: pointer;
+}
+/**/
+.ToggleContainer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.toggel-span {
+  margin-right: 1rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+/* CreatPost.css */
+.CreatPost {
+  position: relative;
+}
+.overlay-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(62, 57, 57, 0.598);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.loading-animation {
+  margin-top: 10rem;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #246bef;
+  border-radius: 50%;
+  width: 4rem;
+  padding: 1.5rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.post-under {
+  display: flex;
+  position: absolute;
+  top: 40%;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #246bfe;
+  background-color: #f3f3f3;
+  border-radius: 1.2rem;
+  padding: 0.5rem;
+}
+.process-loading {
+  color: #ff0000;
+}
+@media (max-width: 1150px) {
+  .post-modal-content {
+    width: 80rem;
+    height: auto;
+    top: 35%;
+    left: 50%;
+  }
+  .CreatPostTitle {
+    font-size: 1.8rem !important;
+  }
+  .CreatPostTitle::after {
+    width: 13.5rem !important;
+  }
+  .InputForm,
+  .InputForm-grid {
+    height: 2.8rem !important;
+    padding: 0 0.8rem !important;
+  }
+  .CaptionHeight-create {
+    height: 13rem !important;
+  }
+  .LabelForm,
+  .LabelForm-grid {
+    font-size: 1.2rem !important;
+  }
+  .InputForm::placeholder,
+  .option-select {
+    font-size: 1.2rem !important;
+  }
+  .ButtonForm {
+    padding: 0.8rem 4rem !important;
+  }
+  #photo::before {
+    padding: 0.7rem 2.8rem !important;
+    font-size: 1.2rem !important;
+  }
+}
+@media (max-width: 950px) {
+  .post-modal-content {
+    width: 70rem;
+    height: auto;
+  }
+  .CreatPostTitle {
+    font-size: 1.6rem !important;
+  }
+  .CreatPostTitle::after {
+    width: 12rem !important;
+  }
+  .InputForm,
+  .InputForm-grid {
+    height: 2rem !important;
+    padding: 0 0.5rem !important;
+  }
+  .InputForm::placeholder,
+  .option-select {
+    font-size: 1rem !important;
+  }
+  .LabelForm,
+  .LabelForm-grid {
+    font-size: 1rem !important;
+  }
+  .CaptionHeight-create {
+    height: 10rem !important;
+  }
+  #photo::before {
+    padding: 0.6rem 2.4rem !important;
+    font-size: 1rem !important;
+  }
+  .ButtonForm {
+    padding: 0.6rem 3rem !important;
+    font-size: 1.4rem !important;
+  }
+}
+@media (max-width: 790px) {
+  .post-modal-content {
+    width: 55rem;
+    height: auto;
+  }
+  .CreatPostTitle {
+    font-size: 1.2rem !important;
+  }
+  .CreatPostTitle::after {
+    width: 9.2rem !important;
+  }
+  .InputForm,
+  .InputForm-grid {
+    height: 1.6rem !important;
+    padding: 0 0.4rem !important;
+  }
+  .InputForm::placeholder,
+  .option-select {
+    font-size: 0.8rem !important;
+  }
+  .LabelForm,
+  .LabelForm-grid {
+    font-size: 0.8rem !important;
+  }
+  .CaptionHeight-create {
+    height: 8rem !important;
+  }
+  #photo::before {
+    padding: 0.5rem 2rem !important;
+    font-size: 0.8rem !important;
+  }
+  .ButtonForm {
+    padding: 0.4rem 2rem !important;
+    font-size: 1.2rem !important;
+  }
+}
+@media (max-width: 615px) {
+  .post-modal-content {
+    width: 40rem;
+    height: auto;
+  }
+  .CreatPostTitle {
+    font-size: 1.2rem !important;
+  }
+  .CreatPostTitle::after {
+    width: 9.2rem !important;
+  }
+  .InputForm,
+  .InputForm-grid {
+    height: 1.6rem !important;
+    padding: 0 0.4rem !important;
+  }
+  .InputForm::placeholder,
+  .option-select {
+    font-size: 0.8rem !important;
+  }
+  .LabelForm,
+  .LabelForm-grid {
+    font-size: 0.8rem !important;
+  }
+  .CaptionHeight-create {
+    height: 8rem !important;
+  }
+  #photo::before {
+    padding: 0.5rem 2rem !important;
+    font-size: 0.8rem !important;
+  }
+  .ButtonForm {
+    padding: 0.4rem 2rem !important;
+    font-size: 1.2rem !important;
+  }
+  .FormButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .data_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0fr;
+  }
+  .data_container-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1.02fr 2fr;
+  }
+  .fix-label {
+    margin-left: 0rem;
+  }
+}
+@media (max-width: 450px) {
+  .post-modal-content {
+    width: 30rem;
+    height: auto;
+  }
+  .CreatPostTitle {
+    font-size: 0.8rem !important;
+  }
+  .CreatPostTitle::after {
+    width: 6.2rem !important;
+  }
+  .InputForm,
+  .InputForm-grid {
+    height: 1.4rem !important;
+    padding: 0 0.4rem !important;
+  }
+  .InputForm::placeholder,
+  .option-select {
+    font-size: 0.6rem !important;
+  }
+  .LabelForm,
+  .LabelForm-grid {
+    font-size: 0.6rem !important;
+  }
+  .CaptionHeight-create {
+    height: 5rem !important;
+  }
+  #photo::before {
+    padding: 0.5rem 2rem !important;
+    font-size: 0.8rem !important;
+  }
+  .ButtonForm {
+    padding: 0.4rem 2rem !important;
+    font-size: 1.2rem !important;
+  }
+  .FormButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .data_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0fr;
+  }
+  .data_container-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1.07fr 2fr;
+  }
+  .fix-label {
+    margin-left: 0rem;
+  }
+}
+@media (max-width: 320px) {
+  .post-modal-content {
+    width: 20rem;
+    height: auto;
+  }
+  .CreatPostTitle {
+    font-size: 0.8rem !important;
+  }
+  .CreatPostTitle::after {
+    width: 6.2rem !important;
+  }
+  .FormContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .InputForm,
+  .InputForm-grid {
+    height: 1.4rem !important;
+    padding: 0 0.4rem !important;
+    margin-left: 0.2rem !important;
+    width: 10rem !important;
+  }
+  .InputForm::placeholder,
+  .option-select {
+    font-size: 0.4rem !important;
+  }
+  .LabelForm,
+  .LabelForm-grid {
+    font-size: 0.6rem !important;
+  }
+  .CaptionHeight-create {
+    height: 5rem !important;
+  }
+  #photo::before {
+    padding: 0.5rem 2rem !important;
+    font-size: 0.8rem !important;
+  }
+  .ButtonForm {
+    padding: 0.4rem 2rem !important;
+    font-size: 1.2rem !important;
+  }
+  .FormButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .data_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0fr;
+  }
+  .data_container-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1.07fr 2fr;
+  }
+  .fix-label {
+    margin-left: 0rem;
+  }
+}

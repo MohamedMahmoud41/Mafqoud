@@ -1,0 +1,707 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  position: relative;
+}
+
+/* CSS styles specific to large devices */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-image-header {
+  display: inline-block;
+  height: 5rem;
+}
+.logo-text-header {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 1000;
+  margin-left: 1rem;
+  color: #ffffff;
+}
+header {
+  background-color: transparent;
+  height: 10vh;
+  padding: 1.5rem 0;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+header a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+  margin-left: 3rem;
+}
+.active {
+  color: #fff;
+}
+header .logbtn {
+  border-radius: 0rem !important;
+  padding: 1.2rem 3rem;
+  background-color: inherit;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+header .userbtn {
+  background: #eef0fd;
+  border-radius: 100%;
+  color: #246bfe;
+  font-size: 1.8rem;
+  padding: 1rem 1.4rem;
+}
+header .logbtn .dark-class {
+  border-radius: 0rem !important;
+  padding: 1.2rem 3rem;
+  background-color: inherit;
+  border: none;
+  color: #000000 !important;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.modeicon-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 0.5rem;
+  font-size: 1.5rem;
+  color: #246bfe;
+}
+
+header .toggle {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+.overlay {
+  background: rgba(27, 27, 27, 0.87);
+}
+
+.modal-content::-webkit-scrollbar {
+  border-radius: 1rem;
+  width: 0rem;
+  height: 90%;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background-color: #f5f5f5;
+  overflow: scroll;
+  border-radius: 4rem;
+  max-width: 35rem;
+  min-width: 20rem;
+  max-height: 98%;
+  box-shadow: 0 0 5rem 0.005rem #246dfe9a;
+  z-index: 2;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 0.7rem;
+}
+.card-body h3 {
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 2.1rem;
+  color: #000000;
+  margin: 2rem 0;
+}
+.card-body h4 {
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  color: #555555;
+  margin-bottom: 1.5rem;
+}
+
+/* Them button */
+
+:root {
+  --text-color: #000;
+  --text-color: #ffffff;
+}
+
+.dark-mode {
+  --bg-color: #000000;
+  --text-color: #ffffff !important;
+}
+h1 {
+  color: var(--text-color);
+}
+
+p {
+  color: var(--text-color);
+}
+a {
+  color: var(--text-color);
+}
+.logo-text-header {
+  color: var(--bg-color);
+}
+header a {
+  color: var(--bg-color);
+}
+header .logbtn {
+  color: var(--bg-color);
+}
+
+.dark-class {
+  background-color: #19191a;
+  color: #fff !important;
+  height: 100%;
+  transition: background-color 0.25s ease-in-out;
+}
+p {
+  font-size: 1.2rem;
+}
+.toggleButton {
+  width: 5rem;
+  height: 2rem;
+  position: relative;
+  display: inline-block;
+}
+.checkDark {
+  visibility: hidden;
+}
+.toggleButton input {
+  opacity: 0.5;
+}
+.roundButton {
+  background-color: #000;
+  top: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+.roundButton:before {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  background-color: #246bfe;
+  transition: 1s;
+  height: 2rem;
+  width: 2rem;
+  scale: 1.02;
+}
+input:checked + .roundButton {
+  background-color: #ffffff;
+}
+input:checked + .roundButton:before {
+  transform: translateX(3rem);
+}
+.roundButton.circle {
+  border-radius: 2rem;
+}
+.roundButton.circle:before {
+  border-radius: 50%;
+}
+
+/* Default styles for all screen sizes */
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+  /* CSS styles specific to extra small devices */
+  .hero {
+    height: 100vh;
+  }
+  .mt-5 {
+    margin: 0 !important;
+  }
+  .container {
+    margin: 0 auto;
+    max-width: 95%;
+    margin-top: 1.2rem;
+  }
+  .justify-content {
+    justify-content: space-between;
+  }
+  header .button {
+    display: none;
+  }
+  header .nav .row {
+    display: none;
+  }
+  .logo-image-header {
+    margin: 0;
+    height: 3rem;
+  }
+  .logo-text-header {
+    font-size: 2rem;
+  }
+  header .toggle {
+    display: block;
+    margin-top: 0rem;
+  }
+  header .toggle button {
+    padding: 1.2rem 1.8rem;
+  }
+  header .small {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: 17.5rem;
+    background-color: rgba(20, 20, 83, 0.93);
+    padding: 2rem;
+  }
+  header .smallbtn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: calc(10vh + 17.5rem);
+    left: 0;
+    width: 100%;
+    background-color: rgba(20, 20, 83, 0.93);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  header li a {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  header .signbtn {
+    background-color: transparent;
+    border: 0.1rem solid #fff;
+    font-size: 1rem !important;
+  }
+  header .logbtn {
+    border-radius: 3rem !important;
+    background-color: transparent;
+    border: 0.1rem solid #fff;
+    margin-right: 1rem;
+    margin-left: 2rem;
+    font-size: 1rem !important;
+  }
+  .fix-width-header {
+    width: 90% !important;
+  }
+}
+/* Small devices (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  /* CSS styles specific to small devices */
+  .hero {
+    height: 100vh;
+  }
+  .container {
+    margin-top: 1.2rem;
+  }
+  header {
+    padding: 0;
+  }
+  .logo-image-header {
+    margin: 0;
+    height: 4rem;
+  }
+  .logo-text-header {
+    font-size: 2.4rem;
+  }
+  header .button {
+    display: none;
+  }
+  header .nav .row {
+    display: none;
+  }
+  header .toggle {
+    display: block;
+    margin-top: 0rem;
+  }
+  header .small {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: 17.5rem;
+    background-color: rgba(20, 20, 83, 0.93);
+    padding: 2rem;
+  }
+  header .smallbtn {
+    position: absolute;
+    top: calc(10vh + 17.5rem);
+    left: 0;
+    width: 100%;
+    background-color: rgba(20, 20, 83, 0.93);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  header li a {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  header .signbtn {
+    background-color: transparent;
+    border: 0.1rem solid #fff;
+  }
+  header .logbtn {
+    border-radius: 3rem !important;
+    background-color: transparent;
+    border: 0.1rem solid #fff;
+    margin-right: 1rem;
+    margin-left: 3rem;
+    color: #fff;
+  }
+  .fix-width-header {
+    width: 90% !important;
+  }
+}
+/* Medium devices (laptops) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .hero {
+    height: 100vh;
+  }
+  .container {
+    margin-top: 1.2rem;
+  }
+  /* CSS styles specific to medium devices */
+  .gap-11 {
+    gap: 2rem;
+  }
+  .logo-image-header {
+    display: inline-block;
+    height: 4rem;
+  }
+  .logo-text-header {
+    font-size: 2rem;
+  }
+  button {
+    padding: 0.5rem 0.8rem;
+  }
+  .navlist li a {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  header li a {
+    margin: 0 0.5rem !important;
+    font-size: 1.3rem !important;
+  }
+  .gap-10 {
+    gap: 0.5rem !important;
+  }
+}
+/* Large devices (desktops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* CSS styles specific to large devices */
+  .hero {
+    height: 100vh;
+  }
+  .container {
+    margin-top: 1.2rem;
+  }
+  .gap-10 {
+    gap: 1rem;
+  }
+  .herobtn-1 {
+    font-size: 1.2rem;
+    padding: 0rem 2.5rem;
+  }
+  .herobtn-2 {
+    font-size: 1.2rem;
+    padding: 0rem 2.5rem;
+  }
+  header li a {
+    margin: 0 0.8rem !important;
+    font-size: 1.8rem !important;
+  }
+}
+/* Extra large devices (large desktops) */
+@media (min-width: 1201px) and (max-width: 1450px) {
+  /* Them button */
+
+  :root {
+    --text-color: #000 !important;
+    --text-color: #ffffff !important;
+  }
+
+  .dark-mode {
+    --bg-color: #000000;
+    --text-color: #ffffff !important;
+  }
+  h1 {
+    color: var(--text-color);
+  }
+
+  p {
+    color: var(--text-color);
+  }
+  a {
+    color: var(--text-color) !;
+  }
+  .logo-text-header {
+    color: var(--bg-color);
+  }
+  header a {
+    color: var(--bg-color);
+  }
+  header .logbtn {
+    color: var(--bg-color) !important;
+  }
+
+  .dark-class {
+    background-color: #19191a;
+    color: #fff !important;
+    height: 100%;
+    transition: background-color 0.25s ease-in-out;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  .toggleButton {
+    width: 5rem;
+    height: 2rem;
+    position: relative;
+    display: inline-block;
+  }
+  .checkDark {
+    visibility: hidden;
+  }
+  .toggleButton input {
+    opacity: 0.5;
+  }
+  .roundButton {
+    background-color: #000;
+    top: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+  }
+  .roundButton:before {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    background-color: #246bfe;
+    transition: 1s;
+    height: 2rem;
+    width: 2rem;
+    scale: 1.02;
+  }
+  input:checked + .roundButton {
+    background-color: #ffffff;
+  }
+  input:checked + .roundButton:before {
+    transform: translateX(3rem);
+  }
+  .roundButton.circle {
+    border-radius: 2rem;
+  }
+  .roundButton.circle:before {
+    border-radius: 50%;
+  }
+  /* CSS styles specific to extra large devices */
+  .container {
+    margin-top: 1.2rem;
+  }
+  .gap-10 {
+    gap: 1.4rem;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-image-header {
+    display: inline-block;
+    height: 6rem;
+  }
+  .logo-text-header {
+    display: inline-block;
+    font-size: 3.5rem;
+    font-weight: 1000;
+    margin-left: 1rem;
+  }
+  header {
+    background-color: transparent;
+    height: 10vh;
+    padding: 1.5rem 0;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+  }
+
+  header a {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    text-align: center;
+    text-transform: capitalize;
+    margin-left: 5rem;
+  }
+  .active {
+    color: #fff;
+  }
+
+  header .logbtn {
+    border-radius: 0rem !important;
+    padding: 1.2rem 3rem;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+  }
+  header .userbtn {
+    background: #eef0fd;
+    border-radius: 100%;
+    color: #246bfe;
+    font-size: 1.8rem;
+    padding: 1rem 1.4rem;
+  }
+  header .logbtn .dark-class {
+    border-radius: 0rem !important;
+    padding: 1.2rem 3rem;
+    background-color: inherit;
+    border: none;
+    color: #000000 !important;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .modeicon-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 0.5rem;
+    font-size: 1.5rem;
+    color: #246bfe;
+  }
+
+  header .toggle {
+    display: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+  .modal,
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+  }
+
+  .overlay {
+    background: rgba(27, 27, 27, 0.87);
+  }
+
+  .modal-content::-webkit-scrollbar {
+    border-radius: 1rem;
+    width: 0rem;
+    height: 90%;
+  }
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background-color: #f5f5f5;
+    overflow: scroll;
+    border-radius: 4rem;
+    max-width: 35rem;
+    min-width: 20rem;
+    max-height: 98%;
+    box-shadow: 0 0 5rem 0.005rem #246dfe9a;
+  }
+
+  .close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 0.7rem;
+  }
+  .card-body h3 {
+    text-align: center;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.1rem;
+    color: #000000;
+    margin: 2rem 0;
+  }
+  .card-body h4 {
+    text-align: center;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+    color: #555555;
+    margin-bottom: 1.5rem;
+  }
+  .rightside h1 {
+    font-size: 4.8rem;
+  }
+  .rightside p {
+    font-size: 2.2rem;
+  }
+  .herobtn-1 {
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+  }
+  .herobtn-2 {
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+  }
+  header li a {
+    margin: 0 1rem !important;
+    margin-bottom: 2rem;
+  }
+}

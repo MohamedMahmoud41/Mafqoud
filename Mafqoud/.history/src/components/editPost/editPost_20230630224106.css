@@ -1,0 +1,431 @@
+.EditPost {
+  padding: 10rem;
+  padding-top: 15rem;
+  margin: 0 auto;
+}
+.CreatPostTitle {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.CreatPostTitle::after {
+  position: absolute;
+  content: "";
+  background-color: #246bef;
+  width: 12rem;
+  height: 0.3rem;
+  bottom: -8%;
+  left: -0.5%;
+  border-radius: 1rem;
+}
+.FormContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Input & Label Styling */
+.InputForm {
+  width: 80%;
+  border: #246bfe 0.1rem solid;
+  border-radius: 0.4rem;
+  margin: 0.5rem 0;
+  height: 3rem;
+  padding: 0 1rem;
+}
+.LabelForm {
+  width: 19%;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+input::placeholder {
+  display: flex;
+  font-size: 1.5rem;
+}
+/* Caption handeling */
+.zero {
+  margin-top: 1.5rem;
+  align-self: flex-start;
+}
+.CaptionHeight {
+  height: 15rem !important;
+  resize: none;
+  overflow: scroll;
+  padding: 1rem 1rem !important;
+}
+/* Input Photo Styling */
+.InputPhotoForm {
+  width: 80%;
+}
+.PhotoForm {
+  border-radius: 1.2rem;
+  border: 0.1rem #246bfe solid;
+  padding: 0.5rem 0.25rem;
+  background-color: #fff;
+}
+#photo {
+  border: 0.1rem solid #ccc;
+  font-size: 1.6rem;
+  visibility: hidden;
+}
+#photo:hover::before {
+  box-shadow: 0 0 0.1rem 0.1rem #246bfe;
+  background-color: #246bfe;
+  color: #ffffff;
+}
+#photo::-webkit-file-upload-button {
+  visibility: hidden;
+}
+#photo::before {
+  content: "Upload Photo";
+  display: inline-block;
+  background: #ffffff;
+  color: #246bfe;
+  border: none;
+  padding: 0.8rem 3rem;
+  cursor: pointer;
+  border-radius: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  visibility: visible;
+  transition: all 0.3s;
+}
+/* Buttons Styling */
+.FormButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ButtonForm {
+  margin-top: 3rem;
+  padding: 1rem 5rem;
+  border-radius: 3rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 580;
+  background-color: #246bfe;
+  color: #ffffff;
+}
+.ButtonForm:hover {
+  box-shadow: 0 0 0.1rem 0.1rem #246bfe;
+  background-color: #ffffff;
+  color: #246bfe;
+  cursor: pointer;
+}
+/**/
+.ToggleContainer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.toggel-span {
+  margin-right: 1rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.line{
+  width: 100%;
+  height: 0.3rem;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1150px) {
+  .CreatPostTitle {
+    font-size: 1.8rem !important;
+  }
+  .CreatPostTitle::after {
+    width: 11rem !important;
+  }
+  .InputForm {
+    height: 4.5rem !important;
+    padding: 0.3rem 0.8rem !important;
+  }
+  .InputForm-grid{
+    height: 3rem !important;
+    padding: 0 0.8rem !important;
+    font-size: 1.2rem;
+  }
+  .CaptionHeight-create {
+    height: 13rem !important;
+  }
+  .LabelForm,
+  .LabelForm-grid {
+    font-size: 1.2rem !important;
+  }
+  .InputForm::placeholder,
+  .option-select {
+    font-size: 1.2rem !important;
+  }
+  .ButtonForm {
+    padding: 0.8rem 4rem !important;
+  }
+  #photo::before {
+    padding: 0.7rem 2.8rem !important;
+    font-size: 1.2rem !important;
+  }
+}
+@media (max-width:1137px) {
+  .CreatPostTitle::after {
+    width: 10.5rem !important;
+  }
+}
+@media (max-width: 950px) {
+  .CreatPostTitle {
+    font-size: 1.6rem !important;
+  }
+  .CreatPostTitle::after {
+    width: 9.5rem !important;
+  }
+  .InputForm {
+    height: 4.5rem !important;
+    padding: 0.3rem 0.8rem !important;
+  }
+  .InputForm-grid{
+    height: 3rem !important;
+    padding: 0 0.8rem !important;
+    font-size: 1.1rem;
+  }
+  .InputForm::placeholder,
+  .option-select {
+    font-size: 1rem !important;
+  }
+  .LabelForm,
+  .LabelForm-grid {
+    font-size: 1rem !important;
+  }
+  #photo::before {
+    padding: 0.6rem 2.4rem !important;
+    font-size: 1rem !important;
+  }
+  .ButtonForm {
+    padding: 0.6rem 3rem !important;
+    font-size: 1.4rem !important;
+  }
+}
+@media (max-width: 790px) {
+  .EditPost{
+    padding: 6rem;
+    padding-top: 10rem;
+  }
+  .CreatPostTitle {
+    font-size: 1.2rem !important;
+  }
+  .CreatPostTitle::after {
+    width: 7rem !important;
+  }
+  .InputForm {
+    height: 2.7rem !important;
+    padding: 0.3rem 0.8rem !important;
+  }
+  .CaptionHeight{
+    height: 4.5rem !important;
+    padding: 0.3rem 0.8rem !important;
+  }
+  .InputForm-grid{
+    height: 1.5rem !important;
+    padding: 0 0.8rem !important;
+    font-size: 0.8rem !important;
+  }
+  .InputForm::placeholder,
+  .option-select {
+    font-size: 0.8rem !important;
+  }
+  .LabelForm,
+  .LabelForm-grid {
+    font-size: 0.8rem !important;
+  }
+  #photo::before {
+    padding: 0.5rem 2rem !important;
+    font-size: 0.8rem !important;
+  }
+  .ButtonForm {
+    padding: 0.4rem 2rem !important;
+    font-size: 1.2rem !important;
+  }
+}
+@media (max-width: 615px) {
+  .CreatPostTitle {
+    font-size: 1.2rem !important;
+  }
+  .CreatPostTitle::after {
+    width: 6.9rem !important;
+  }
+  .InputForm {
+    height: 2rem !important;
+    padding: 0.3rem 0.8rem !important;
+  }
+  .CaptionHeight{
+    height: 4.7rem !important;
+    padding: 0.3rem 0.8rem !important;
+  }
+  .InputForm-grid{
+    height: 1.5rem !important;
+    padding: 0 0.8rem !important;
+    font-size: 0.8rem !important;
+  }
+  .InputForm::placeholder,
+  .option-select {
+    font-size: 0.8rem !important;
+  }
+  .LabelForm,
+  .LabelForm-grid {
+    font-size: 0.8rem !important;
+  }
+  .CaptionHeight-create {
+    height: 8rem !important;
+  }
+  #photo::before {
+    padding: 0.5rem 2rem !important;
+    font-size: 0.8rem !important;
+  }
+  .ButtonForm {
+    padding: 0.4rem 2rem !important;
+    font-size: 1.2rem !important;
+  }
+
+}
+@media (max-width: 472px) {
+  .EditPost{
+    padding-top: 9rem !important; 
+    padding: 4rem;
+  }
+  .CreatPostTitle {
+    font-size: 0.8rem !important;
+  }
+  .CreatPostTitle::after {
+    width: 4.6rem !important;
+  }
+  .InputForm {
+    height: 1.8rem !important;
+    padding: 0.2rem 0.5rem !important;
+    font-size: 0.4rem;
+  }
+  .CaptionHeight{
+    height: 4rem !important;
+    padding: 0.5rem 0.5rem !important;
+    font-size: 0.2rem;
+  }
+  .InputForm-grid{
+    height: 1.2rem !important;
+    padding: 0 0.1rem !important;
+    font-size: 0.5rem !important;
+  }
+  .InputForm::placeholder {
+    font-size: 0.6rem !important;
+  }
+  .option-select{
+    font-size: 1rem !important;
+  }
+  .LabelForm,
+  .LabelForm-grid {
+    font-size: 0.6rem !important;
+  }
+  #photo::before {
+    padding: 0.5rem 2rem !important;
+    font-size: 0.8rem !important;
+  }
+  .ButtonForm {
+    padding: 0.1rem 1.5rem !important;
+    font-size: 0.8rem !important;
+    margin-top: 1.2rem;
+  }
+  .fix-label {
+    margin-left: 0rem;
+  }
+}
+@media (max-width: 402px) {
+  .CreatPostTitle {
+    font-size: 0.5rem !important;
+  }
+  .CreatPostTitle::after {
+    width: 2.9rem !important;
+  }
+  .InputForm {
+    height: 1.2rem !important;
+    padding: 0.2rem 0.5rem !important;
+    font-size: 0.3rem;
+  }
+  .CaptionHeight{
+    height: 3rem !important;
+    padding: 0.5rem 0.5rem !important;
+    font-size: 0.2rem;
+  }
+  .InputForm-grid{
+    height: 1rem !important;
+    padding: 0 0.1rem !important;
+    font-size: 0.4rem !important;
+  }
+  .InputForm::placeholder,
+  .option-select {
+    font-size: 0.4rem !important;
+  }
+  .LabelForm,
+  .LabelForm-grid {
+    font-size: 0.4rem !important;
+  }
+  #photo::before {
+    padding: 0.5rem 2rem !important;
+    font-size: 0.8rem !important;
+  }
+  .ButtonForm {
+    padding: 0.1rem 1.5rem !important;
+    font-size: 0.8rem !important;
+    margin-top: 1.2rem;
+  }
+  .fix-label {
+    margin-left: 0rem;
+  }
+}
+@media (max-width: 347px) {
+  .CreatPostTitle {
+    font-size: 0.5rem !important;
+  }
+  .CreatPostTitle::after {
+    width: 2.9rem !important;
+  }
+  .InputForm {
+    height: 1.2rem !important;
+    padding: 0.2rem 0.5rem !important;
+    font-size: 0.3rem;
+  }
+  .CaptionHeight{
+    height: 2.8rem !important;
+    padding: 0.5rem 0.5rem !important;
+    font-size: 0.2rem;
+  }
+  .InputForm-grid{
+    height: 0.9rem !important;
+    padding: 0 0.1rem !important;
+    font-size: 0.4rem !important;
+  }
+  .InputForm::placeholder,
+  .option-select {
+    font-size: 0.35rem !important;
+  }
+  .LabelForm,
+  .LabelForm-grid {
+    font-size: 0.3rem !important;
+  }
+  #photo::before {
+    padding: 0.5rem 2rem !important;
+    font-size: 0.8rem !important;
+  }
+  .ButtonForm {
+    padding: 0.1rem 1.5rem !important;
+    font-size: 0.8rem !important;
+    margin-top: 1.2rem;
+  }
+  .fix-label {
+    margin-left: 0rem;
+  }
+}
+

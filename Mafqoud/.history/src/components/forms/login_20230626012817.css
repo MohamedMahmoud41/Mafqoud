@@ -1,0 +1,226 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  background-color: rgb(11, 2, 51);
+  border-radius: 30px;
+}
+.logo-image-form {
+  width: 20rem;
+}
+.card-body {
+  padding: 0 45px;
+}
+
+.text-center {
+  text-align: center;
+}
+.ftext {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+.form-control {
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  align-items: center;
+  padding: 0px 0px 0px 15px;
+  width: 320px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.form-check {
+  text-align: left;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.form-check-input {
+  border-color: #246bfe !important;
+}
+.forget-pass {
+  display: block;
+  margin-left: 0 !important;
+  margin-bottom: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
+.no-account {
+  display: inline-block;
+  margin-left: 0 !important;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #9e9d9d;
+}
+.signup-switch {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 0 !important;
+  margin-bottom: 1rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 2.1rem;
+  text-align: center;
+  color: #246bfe;
+}
+.btn-login {
+  padding: 1rem 8rem;
+  border-radius: 2rem;
+  background-color: #246bfe;
+  margin-bottom: 2rem !important;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+.btn-login:hover {
+  color: #000 !important;
+  border-color: transparent !important;
+  box-shadow: rgba(0, 0, 0, 0.2) 0rem 0rem 2rem;
+  background-color: transparent;
+  scale: none !important;
+}
+.form-footer {
+  text-align: left;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 2.1rem;
+  color: #000000;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  background-color: rgb(11, 2, 51);
+  border-radius: 30px;
+}
+.logo-img {
+  width: 20rem;
+}
+.card-body {
+  padding: 0 45px;
+}
+
+.text-center {
+  text-align: center;
+}
+.ftext {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+.form-control {
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  align-items: center;
+  padding: 0px 0px 0px 15px;
+  width: 320px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.form-check {
+  text-align: left;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.form-check-input {
+  border-color: #246bfe !important;
+}
+.forget-pass {
+  display: block;
+  margin-left: 0 !important;
+  margin-bottom: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
+.no-account {
+  display: inline-block;
+  margin-left: 0 !important;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #9e9d9d;
+}
+.signup-switch {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 0 !important;
+  margin-bottom: 1rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 2.1rem;
+  text-align: center;
+  color: #246bfe;
+}
+.btn-login {
+  padding: 1rem 8rem;
+  border-radius: 2rem;
+  background-color: #246bfe;
+  margin-bottom: 2rem !important;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+.btn-login:hover {
+  color: #000 !important;
+  border-color: transparent !important;
+  box-shadow: rgba(0, 0, 0, 0.2) 0rem 0rem 2rem;
+  background-color: transparent;
+  scale: none !important;
+}
+.form-footer {
+  text-align: left;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 2.1rem;
+  color: #000000;
+}

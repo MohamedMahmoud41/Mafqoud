@@ -1,0 +1,155 @@
+.postes {
+  padding-top: 10rem;
+  margin: 0 auto;
+  width: 100%;
+}
+.no-posts {
+  display: block;
+  text-align: center;
+  padding: 15rem;
+}
+.no-posts-text {
+  font-size: 4rem;
+  font-weight: 600;
+  text-shadow: 0.2rem 0.1rem 1rem #246bef;
+}
+.most-mypost {
+  position: relative;
+  font-size: 2.5rem;
+  color: #246bef;
+  margin-left: 14rem;
+  margin-top: 4rem;
+}
+.most-mypost::after {
+  position: absolute;
+  content: "";
+  background-color: #246bef;
+  width: 13.4rem;
+  height: 0.3rem;
+  bottom: -8%;
+  left: 0%;
+}
+.loster-details {
+  font-size: 1.5rem;
+  margin: 3rem 0rem;
+  text-align: left;
+  position: relative;
+}
+.loster-details::after {
+  content: "";
+  position: absolute;
+  bottom: -2.5rem;
+  left: 0rem;
+  height: 0.05rem;
+  width: 100%;
+  background-color: #246bef;
+}
+.post {
+  position: relative;
+}
+.editphoto {
+  margin-right: 5rem;
+}
+.post-mypost-width {
+  width: 80% !important;
+}
+.dropbtn {
+  background-color: transparent;
+  color: #246bef;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 1.5rem;
+}
+.dropdown {
+  position: absolute;
+  display: flex;
+  height: 4rem;
+  width: 5rem;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: -7%;
+  z-index: 999;
+}
+.dropdown-content {
+  color: #000;
+  display: none;
+  font-size: 1rem;
+  font-weight: 600;
+  position: absolute;
+  background-color: #f1f1f1;
+  top: 80%;
+  right: 75%;
+  z-index: 5;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  transition: all 0.3s;
+  box-shadow: 0 0 1rem 0.05rem #246bef;
+}
+.dropdown-content:hover {
+  cursor: pointer;
+  color: #246bef;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 1.2rem 1.6rem;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s;
+}
+.dropdown-content a:hover {
+  color: #fff;
+  background-color: #333;
+  scale: 1.13;
+}
+.dropdown-content {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+.mypost {
+  position: relative;
+}
+.delete-message {
+  position: fixed;
+  font-size: 2rem;
+  color: #246bef;
+  background-color: #fff;
+  box-shadow: 0 0 1rem 0.2rem #246bef;
+  border-radius: 1.2rem;
+  padding: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+.loading-animation-myposts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.loading-animation-myposts::after {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 4px solid #333;
+  border-top-color: #246bef;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
